@@ -1,0 +1,70 @@
+#+TITLE: README
+#+AUTHOR: FFFluoride
+# V PLS IGNORE
+#+BIBLIOGRAPHY: example.bib
+#+CITE_EXPORT: csl apa.csl
+#+OPTIONS: ':nil *:t -:t ::t <:t \n:nil ^:t arch:headline author:t expand-links:t broken-links:mark c:nil creator:t d:(not "LOGBOOK") date:t e:t f:t H:3 inline:nil num:nil pri:nil prop:nil stat:t tags:nil tasks:t tex:t timestamp:t |:t toc:t
+# ^ PLS IGNORE
+* What is this project?
+This a template you can +easily+ pull in with git and start writing theories and articles in Org
+
+* Org basics
+Org files have the =.org= file extension but are just plain text files
+
+For more detail on Org in general see... https://orgmode.org/guide/index.html
+Note: Some advice (e.g. keybinds) are emacs specific, therefore if not you aren't using emacs *please ignore* them
+** Editor
+To be able to write Org files you need something that can handle the format. Although Org is plain text, having a good editor is nice. See... [[https://github.com/JSmurf/awesome-org#other-editors]]
+Or if you're /brave/ enough, just use emacs 😀
+
+Please follow guides on how to use your prefered editor to edit Org files
+
+** Basic structure of a document
+In Org, you can add sections to the document like this
+~* My Section~
+The above would make a level 1 section. A level 2 section looks like this:
+~** My Level 2 Section~
+In general to make an =N=-level section, you need =N= asterisks. There are, in fact, sections on this very document (if you are looking at the source, that is)
+Inside sections you can write text!
+
+** Markup
+When exporting from an Org file into something like HTML or PDF (through Latex), blocks of text are paragraphs. They are seperated by at least on empty line, that is, at least two line breaks
+
+You can also format things in *bold*, /italics/, _underlined_, =verbatim=, ~code~ and +strikethrough+
+
+Org also natively supports /some/ latex; Subscripts_{subscripts}, Superscripts^{superscripts} for example
+If this is too limiting you can use inline latex (usually math) with =$YOUR MATH HERE$=
+
+If this still isn't to your tastes, you can add full environments:
+\begin{align*}
+1 + 1 &= 2\\
+& 2 + 2 = 4\\
+& \frac{1}{4} + \frac{1}{4} = \frac{1}{2}
+\end{align*}
+
+** Footnotes and Citations
+Footnotes look like this [fn:1].
+Citations need a .bib file to work, in this case =example.bib= (did you notice it at the top of the file?) looks like this:
+#+begin_example
+@Comment Every Reference needs a unique key. This one's key is 'EXAMPLE'
+@Unpublished{EXAMPLE, 
+  author = 	 {FFFluoride},
+  title = 	 {This is an awesome citation},
+  note = 	 {Useless note (at least for this example)},
+  year =	 2026
+}
+#+end_example
+If you want to add references to your bibliography, you will need to edit this file. =Unpublished= is just one of the many formats you can use for references. Here's a couple more [[https://latex-tutorial.com/tutorials/bibtex/#Formats]]
+
+Now, In your Org file, all you need to do is insert this: [cite:@EXAMPLE]. Citing is a little more complex than what is seen here. If you want to know more, see [[https://blog.tecosaur.com/tmio/2021-07-31-citations.html]]
+
+Another thing is, when you want citations, you usually also want a bibliography +they're kind of a package deal+. Just use: ~#+PRINT_BIBLIOGRAPHY:~ on it's own line where you want the bibliography to go. I'd put it in [[*References][References]] myself
+* Exporting
+If you don't use GNU Emacs, please consult the documentation of your editor on how to export into different file formats
+
+Exporting *[[https://orgmode.org/guide/Exporting.html][IN EMACS]]*
+* References
+#+PRINT_BIBLIOGRAPHY: 
+* Footnotes
+
+[fn:1] This is a footnote! 

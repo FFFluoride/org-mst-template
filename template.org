@@ -1,0 +1,48 @@
+# #+TITLE: YOUR TITLE
+# #+LATEX: \newpage
+# #+AUTHOR: YOU
+# #+LANGUAGE: en
+# # DON'T TOUCH VVVV (unless you know what you're doing) VVVV
+# #+OPTIONS: ':nil *:t -:t ::t <:t \n:nil ^:t arch:headline author:t expand-links:t broken-links:mark c:nil creator:t d:(not "LOGBOOK") date:t e:t f:t H:3 inline:nil num:nil pri:nil prop:nil stat:t tags:nil tasks:t tex:t timestamp:t |:t toc:nil
+# # V YOU NEED THIS INSTALLED V
+# #+LATEX_COMPILER: xelatex
+# # V YOU NEED THIS INSTALLED V
+# #+LATEX_HEADER: \usepackage{xeCJK}
+# # V YOU NEED THIS INSTALLED V
+# #+LATEX_HEADER: \usepackage[margin=3cm]{geometry}
+# #+CITE_EXPORT: csl apa.csl
+# # V YOU NEED THIS FILE IN THE DIRECTORY V
+# #+BIBLIOGRAPHY: references.bib
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
+# #+TOC: headlines 2
+# #+LATEX: \newpage
+# # DON'T TOUCH ^^^^ (unless you know what you're doing) ^^^^
+#+TITLE: The Hades Theory
+#+LATEX: \newpage
+#+AUTHOR: Rev
+#+LANGUAGE: en
+#+OPTIONS: ':nil *:t -:t ::t <:t \n:nil ^:t arch:headline author:t expand-links:t broken-links:mark c:nil creator:t d:(not "LOGBOOK") date:t e:t f:t H:3 inline:nil num:t pri:nil prop:nil stat:t tags:nil tasks:t tex:t timestamp:t |:t toc:nil
+#+LATEX_COMPILER: xelatex
+#+LATEX_HEADER: \usepackage{xeCJK}
+#+LATEX_HEADER: \usepackage[margin=3cm]{geometry}
+#+CITE_EXPORT: csl apa.csl
+#+bibliography: references.bib
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="style.css" />
+#+TOC: headlines 2
+* Abstract
+:PROPERTIES:
+:CUSTOM_ID: Abstract
+:END:
+YOUR ABSTRACT HERE
+#+LATEX: \\ \\ % This simply adds a double line break
+* Section 1
+:PROPERTIES:
+:CUSTOM_ID: Section 1
+:END:
+TEXT HERE
+#+LATEX: \\ \\ % This simply adds a double line break
+* Bibliography
+:PROPERTIES:
+:CUSTOM_ID: Bibliography
+:END:
+#+PRINT_BIBLIOGRAPHY:
