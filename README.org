@@ -43,7 +43,7 @@ If this still isn't to your tastes, you can add full environments:
 & \frac{1}{4} + \frac{1}{4} = \frac{1}{2}
 \end{align*}
 #+end_example
-
+(Github doesn't support math in the readme, so this is what you get lol)
 ** Footnotes and Citations
 Footnotes look like this [fn:1].
 Citations need a .bib file to work, in this case =example.bib= (did you notice it at the top of the file?) looks like this:
