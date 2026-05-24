@@ -36,11 +36,13 @@ Org also natively supports /some/ latex; Subscripts_{subscripts}, Superscripts^{
 If this is too limiting you can use inline latex (usually math) with =$YOUR MATH HERE$=
 
 If this still isn't to your tastes, you can add full environments:
+#+begin_example
 \begin{align*}
 1 + 1 &= 2\\
 & 2 + 2 = 4\\
 & \frac{1}{4} + \frac{1}{4} = \frac{1}{2}
 \end{align*}
+#+end_example
 
 ** Footnotes and Citations
 Footnotes look like this [fn:1].
